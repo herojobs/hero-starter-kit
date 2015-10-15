@@ -25,6 +25,7 @@
     "gulp-nodemon": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
     "lodash": "^3.10.1",
+    "mongoose": "^4.1.11",
     "swig": "^1.4.2",
     "throw.js": "^1.0.0"
   },

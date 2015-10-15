@@ -34,11 +34,11 @@ export default (app) => {
 
   //Set Static Directory
   app.use(express.static(config.root + '/public'));
-  var routers = glob.sync(config.root + '/app/routes/*.js');
+  var routers = glob.sync(config.root + '/app/*/*/routes/*.js');
   routers.forEach(function(router) {
     require(router)(app);
   });
-  
+
   app.get('/', function(req, res) {
     res.send('Hello World!');
   });

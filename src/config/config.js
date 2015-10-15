@@ -5,9 +5,13 @@ let env = process.env.NODE_ENV || 'development';
 let workers = process.env.WEB_CONCURRENCY || 1;
 let config = {
   all: {
+    env: env,
     root: rootPath,
     numberOfWorkers: workers,
     port: process.env.PORT || 3050,
+  },
+  development:{
+    db: 'mongodb://localhost:27017',
   }
 }
 
