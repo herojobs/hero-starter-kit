@@ -6,7 +6,8 @@ let workers = process.env.WEB_CONCURRENCY || 1;
 let config = {
   all: {
     root: rootPath,
-    numberOfWorkers: workers
+    numberOfWorkers: workers,
+    port: process.env.PORT || 3050,
   }
 }
 

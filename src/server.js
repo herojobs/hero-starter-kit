@@ -10,7 +10,7 @@ if (cluster.isMaster) {
 } else {
   var app = express();
   require('./config/express')(app);
-  var server = app.listen(1234, function() {
+  var server = app.listen(config.port, function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log('Core app listening at http://%s:%s', host, port);
