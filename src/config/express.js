@@ -10,10 +10,11 @@ import throwjs from 'throw.js';
 export default (app) => {
   console.log(config.root);
   //View Engine (swig)
-  app.engine('swig', swig.renderFile);
+  app.engine('html', swig.renderFile);
   app.set('views', config.root + '/app/views');
-  app.set('view engine', 'swig');
-
+  app.set('view engine', 'html');
+  app.set('view cache', false);
+  swig.setDefaults({ cache: false });
   //Set Body Parsers
   app.use(bodyParser.urlencoded({
     extended: true

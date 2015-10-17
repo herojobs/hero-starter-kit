@@ -1,8 +1,7 @@
 export default {
   retrieveAll: (req, res, next) => {
-    res.json({
-      success: '1'
-    });
+    console.log('hello');
+    res.json([]);
   },
   retrieve: (req, res, next) => {
 
@@ -19,4 +18,5 @@ export default {
   findById:(req, res, next) => {
 
   }
+
 }

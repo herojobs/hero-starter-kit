@@ -4,5 +4,6 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 require('./tasks/build');
 require('./tasks/develop');
-gulp.task('default',['build','develop','watch'], function(){
+require('./tasks/webpack');
+gulp.task('default',['build','develop','watch','webpack'], function(){
 });

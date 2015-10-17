@@ -11,12 +11,16 @@
   "dependencies": {
     "babel-core": "^5.8.25",
     "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
     "body-parser": "^1.14.1",
+    "browser-sync": "^2.9.11",
     "bunyan": "^1.5.1",
     "bunyan-request": "^1.2.0",
     "compression": "^1.6.0",
+    "css-loader": "^0.19.0",
     "eslint": "^1.6.0",
     "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.8.2",
     "glob": "^5.0.15",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
@@ -24,10 +28,19 @@
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.6",
+    "jquery": "^2.1.4",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
     "lodash": "^3.10.1",
     "mongoose": "^4.1.11",
+    "ng-admin": "^0.8.0",
+    "node-sass": "^3.3.3",
+    "sass-loader": "^3.0.0",
+    "style-loader": "^0.12.4",
     "swig": "^1.4.2",
-    "throw.js": "^1.0.0"
+    "throw.js": "^1.0.0",
+    "webpack": "^1.12.2"
   },
   "devDependencies": {}
 }
